@@ -1,0 +1,31 @@
+.menudiv {
+    position: fixed;
+    top: 0;
+    padding: 0;
+}
+
+.menudiv ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+}
+
+.menudiv li {
+    border: solid 2px;
+    text-align: center;
+    height: 30px;
+}
+
+.page {
+    height: 100vh;
+    background-color: red;
+}
+
+.chatdiv {
+    background-color: blue;
+    position: fixed;
+    bottom: 0;
+}

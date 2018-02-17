@@ -1,0 +1,18 @@
+Questo file conterrà i compiti da fare e da presentare giovedì in laboratorio
+
+Ricordo che dobbiamo utilizzare al massimo due colori principali che sono #2ecc71 #3498db oltre che al nero e al bianco
+Ho cercato di darvi qualche consiglio, ma vedete di fare bene e non una roba buttata la tanto per
+
+Rocco Mosele
+-sistema il menù (te l'ho gia fatto responsive), metti apposto i colori, fallo bello e originale
+-se riesci trova gia qualche animazione per lo scroll quando clicchi e ti porta sul segnalibro
+
+Alessanro Nicolè
+-inizia a fare il whoarewediv, scrivi chi siamo, fai tipo una card per ogni membro del gruppo, con foto, nome cognome e compito del membro
+
+Manuel Rengo
+-inizia il functiondiv, scrivi un po come funziona l'app, quindi io metterei un wall of text a sinistra ben formattato e a destra uno sreenshot dell'app che disegnamo in seguito
+-inizia il pricediv, metti due tabelline come nel business plan (non usare il tag table, usa il div e lo modifichi con css)
+
+Tommaso Sguoto
+-inizia l'homediv, metti una frase ad effetto e uno sfondo decente
