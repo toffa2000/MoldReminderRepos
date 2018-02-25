@@ -134,3 +134,90 @@
         height: 15vh;
     }
 }
+
+.pricetab {
+    box-shadow: 0px 0px 30px 0px #333333;
+    border-radius: 5px;
+    margin: 32px 0;
+    padding: 0;
+    color: white;
+}
+
+.pricetab--1 {
+    background-color: rgba(46, 204, 113, 0.7);
+}
+
+.pricetab--2 {
+    background-color: rgba(52, 152, 219, 0.7);
+}
+
+.pricetab img {
+    width: 30%;
+    margin-left: 50%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    transform: translateX(-50%);
+}
+
+.pricetab h4 {
+    text-align: center;
+    margin: 8px 0;
+}
+
+.pricetab p {
+    padding: 0;
+    margin: 24px 32px;
+}
+
+.pricetab ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.pricetab li {
+    padding: 0;
+    margin: 24px 32px;
+    list-style: none;
+    text-align: left;
+}
+
+.pricetab .fa-times {
+    color: red;
+}
+
+.pricetab .fa-check {
+    color: green;
+}
+
+.pricetab__icons {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0 32px 0 0;
+}
+
+.pricetab h5 {
+    text-align: center;
+    display: inline-block;
+    margin-left: 50%;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.pricetab--1 h5 {
+    color: rgba(46, 204, 113, 0.7);
+}
+
+.pricetab--2 h5 {
+    color: rgba(52, 152, 219, 0.7);
+}
+
+
+.pricediv__title {
+    text-align: center;
+    margin: 64px 0;
+}
