@@ -1,97 +1,124 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>MoldReminder</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    </head>
-    <body>
-        <!-- Rocco -->
-        <div class="menudiv container-fluid">
-            <div class="row justify-content-center">
-                <ul class="col-sm-12 col-md-12 col-lg-8 col-xl-6">
-                    <li class="col"><a href="#functionlink">Funzioni</a></li>
-                    <li class="col"><a href="#pricelink">Prezzi</a></li>
-                    <li class="col"><a href="#homelink">ICONA</a></li>
-                    <li class="col"><a href="#whoarewelink">Chi siamo</a></li>
-                    <li class="col chatmenu">Contattaci</li>
-                </ul>
-            </div>
-        </div>
+<head>
+    <meta charset="utf-8">
+    <title>MoldReminder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+    <!-- Rocco -->
+    <div class="menudiv container-fluid">
+        <ul class="row justify-content-center">
+            <li class="col"><a class="menudiv__item" href="#functionlink">Funzioni</a></li>
+            <li class="col"><a class="menudiv__item" href="#pricelink">Prezzi</a></li>
+            <li class="col"><a class="menudiv__item" href="#homelink"><img id="img1" src="images/Enlight57.png"></a></li>
+            <li class="col"><a class="menudiv__item" href="#whoarewelink">Chi siamo</a></li>
+            <li class="col chatmenu menudiv__item">Contattaci</li>
+        </ul>
+    </div>
 
-        <!-- Tommaso -->
-        <div id="homelink" class="page homediv">
-            <p>homediv</p>
+    <!-- Tommaso -->
+    <div id="homelink" class="parallax-window" data-parallax="scroll" data-image-src="images/bgclock.png" style="height: 100vh">
+        <div class="homediv">
+            <img src="images/Enlight57.png">
+            <h1>Le scadenze</h1><br><h2>non sono pi&ugrave un problema</h2>
         </div>
+    </div>
 
-        <!-- Rengo -->
-        <div id="functionlink" class="page functiondiv">
-            <p>functiondiv</p>
-        </div>
-
-        <!-- Rengo -->
-        <div id="pricelink" class="container page pricediv">
+    <!-- Rengo -->
+    <div id="functionlink" class="functiondiv">
+        <div class="container">
             <div class="row">
-                <h2 class="col pricediv__title">Ecco le nostre versioni</h2>
+                <h2 class="col functiondiv__title">Ciaojfdij</h2>
             </div>
-            <div class="row justify-content-around">
-                <div class="col-sm-11 col-md-10 col-lg-3 pricetab pricetab--1">
-                    <img src="http://via.placeholder.com/150x150" alt="">
-                    <h4>MoldReminderFree</h4>
-                    <p>Cosa offre questa versione:</p>
-                    <ul>
-                        <li><i class="fas fa-times pricetab__icons"></i>niente pubblicità</li>
-                        <li><i class="fas fa-times pricetab__icons"></i>scansioni illimitate</li>
-                    </ul>
-                    <h5>free</h5>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 functiondiv-par">
+                    <p>MoldReminder è un'applicazione innovativa che ha lo scopo di ricordare all’utente la scadenza dei prodotti che vengono acquistati tramite la scannerizzazione della data di scadenza impressa in un bene alimentare. <br> Grazie a questa è possibile memorizzare tale data e far ricordare all’utente in quanto tempo è preferibile consumare quel prodotto, tramite notifiche o promemoria.</p>
                 </div>
-                <div class="col-sm-11 col-md-10 col-lg-3 pricetab pricetab--2">
-                    <img src="http://via.placeholder.com/150x150" alt="">
-                    <h4>MoldReminderPremium</h4>
-                    <p>Cosa offre questa versione:</p>
-                    <ul>
-                        <li><i class="fas fa-check pricetab__icons"></i>niente pubblicità</li>
-                        <li><i class="fas fa-check pricetab__icons"></i>scansioni illimitate</li>
-                    </ul>
-                    <h5>free</h5>
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="row justify-content-center">
+                        <div class="mb col-sm-12 col-lg-4">
+                            <img class="functiondiv-img" src="http://via.placeholder.com/150x350">
+                            <a class="store-button store-button-android" href="#"><i class="fab fa-android"></i></a>
+                        </div>
+                        <div class="mb col-sm-12 col-lg-4">
+                            <img class="functiondiv-img" src="images/iPhone-flat.png">
+                            <a class="store-button store-button-apple" href="#"><i class="fab fa-app-store-ios"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Nicolè -->
-        <div id="whoarewelink" class="page whoarewediv">
-            <p>whoarewediv</p>
-        </div>
-
-        <!-- Toffa -->
-        <div id="chatid" style="display: none" class="chatdiv container col-sm-12 col-md-10 offset-md-1 col-lg-3 col-xl-3 offset-lg-8">
-            <div class="chatheader">
-                <p>scrivici</p>
-                <a class="minimize"><i class="fas fa-window-minimize"></i></a>
-                <a class="closechat"><i class="fas fa-times"></i></a>
+    <!-- Rengo -->
+    <div id="pricelink" class="parallax-window" data-parallax="scroll" data-image-src="images/bgclock.png" style="height: 100vh">
+        <div class="pricediv">
+            <div class="container">
+                <div class="row">
+                    <h2 class="col pricediv__title">Ecco le nostre versioni</h2>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-sm-11 col-md-10 col-lg-3 pricetab pricetab--1">
+                        <img src="images/no-money.png" alt="">
+                        <h4>MoldReminderFree</h4>
+                        <p>Cosa offre questa versione:</p>
+                        <ul>
+                            <li><i class="fas fa-times pricetab__icons"></i>niente pubblicità</li>
+                            <li><i class="fas fa-times pricetab__icons"></i>scansioni illimitate</li>
+                        </ul>
+                        <h5>free</h5>
+                    </div>
+                    <div class="col-sm-11 col-md-10 col-lg-3 pricetab pricetab--2">
+                        <img src="images/wallet.png" alt="">
+                        <h4>MoldReminderPremium</h4>
+                        <p>Cosa offre questa versione:</p>
+                        <ul>
+                            <li><i class="fas fa-check pricetab__icons"></i>niente pubblicità</li>
+                            <li><i class="fas fa-check pricetab__icons"></i>scansioni illimitate</li>
+                        </ul>
+                        <h5>free</h5>
+                    </div>
+                </div>
             </div>
-            <div class="chatbody">
-                <form class="chatform">
-                    <input class="chatname" type="text" name="name" placeholder="Come ti chiami?">
-                    <textarea class="chatmessage" name="messaggio" placeholder="Scrivici quello che vuoi"></textarea>
-                    <input class="chatbutton" type="button" name="" value="Invia">
-                </form>
-            </div>
         </div>
+    </div>
 
-        <div style="display: none" class="messdiv container col-sm-12 col-md-12 col-lg-3 col-xl-3 offset-lg-8">
-            <h2>Grazie mille</h2>
-            <p>Tutto il gruppo MoldReminder ti ringrazia per averci fatto sapere come la pensi</p>
+    <!-- Nicolè -->
+    <div id="whoarewelink" class="page whoarewediv">
+        <p>whoarewediv</p>
+    </div>
+
+    <!-- Toffa -->
+    <div id="chatid" style="display: none" class="chatdiv container col-sm-12 col-md-10 offset-md-1 col-lg-3 col-xl-3 offset-lg-8">
+        <div class="chatheader">
+            <p>scrivici</p>
+            <a class="minimize"><i class="fas fa-window-minimize"></i></a>
+            <a class="closechat"><i class="fas fa-times"></i></a>
         </div>
+        <div class="chatbody">
+            <form class="chatform">
+                <input class="chatname" type="text" name="name" placeholder="Come ti chiami?">
+                <textarea class="chatmessage" name="messaggio" placeholder="Scrivici quello che vuoi"></textarea>
+                <input class="chatbutton" type="button" name="" value="Invia">
+            </form>
+        </div>
+    </div>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <div style="display: none" class="messdiv container col-sm-12 col-md-12 col-lg-3 col-xl-3 offset-lg-8">
+        <h2>Grazie mille</h2>
+        <p>Tutto il gruppo MoldReminder ti ringrazia per averci fatto sapere come la pensi</p>
+    </div>
 
-        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/parallax.js"></script>
 
-    </body>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
 </html>
