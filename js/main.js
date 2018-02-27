@@ -1,5 +1,4 @@
 $('a[href*="#"]')
-// Remove links that don't actually link to anything
 .not('[href="#"]')
 .not('[href="#0"]')
 .click(function(event) {
@@ -34,29 +33,36 @@ $('a[href*="#"]')
     }
 });
 
-$(".chatbutton").click(function() {
-    $(".chatbody").slideUp(400);
+var chatButton = $(".chatbutton");
+var chatBody = $(".chatbody");
+var chatMenu = $(".chatmenu");
+var closechat = $(".closechat");
+var chatdiv = $(".chatdiv");
+var minimize = $(".minimize");
+
+chatButton.click(function() {
+    chatBody.slideUp(400);
 
     $(".messdiv").delay(400).fadeIn(400);
     $(".messdiv").delay(2400).fadeOut(2000);
 })
 
-$(".chatmenu").click(function() {
-    $(".chatbody").slideDown(400, function() {
-        $(".chatdiv").slideDown(400);
+chatMenu.click(function() {
+    chatBody.slideDown(400, function() {
+        chatdiv.slideDown(400);
     });
 })
 
-$(".closechat").click(function() {
-    $(".chatdiv").slideUp(400, resetValue());
+closechat.click(function() {
+    chatdiv.slideUp(400, resetValue());
 })
 
-$(".minimize").click(function() {
-    $(".chatbody").slideUp(400);
+minimize.click(function() {
+    chatBody.slideUp(400);
 })
 
-$(".chatheader p").click(function() {
-    $(".chatbody").slideDown(400);
+$(".chatheader h5").click(function() {
+    chatBody.slideDown(400);
 })
 
 

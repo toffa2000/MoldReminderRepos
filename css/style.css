@@ -18,6 +18,7 @@
 .menudiv__item:hover {
     color:grey;
     text-decoration:none;
+    transition: .4s;
 }
 
 .menudiv ul {
@@ -44,15 +45,9 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
+    text-align: center;
 }
 
-.homediv h2{
-    color: white;
-    position: absolute;
-    top: 64%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
 
 .homediv img {
     width: 15%;
@@ -73,12 +68,6 @@
  }
 
 
-
-.page {
-    height: 100vh;
-    background-color: #000;
-}
-
 .chatdiv {
     position: fixed;
     bottom: 0;
@@ -93,7 +82,7 @@
 
 .chatheader {
     width: 100%;
-    background-color: #2ecc71;
+    background-color: rgba(0,0,0,0.5);
     padding: 16px 16px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -103,22 +92,26 @@
     position: absolute;
     right: 16px;
     top: 20px;
+    cursor: pointer;
 }
 
 .chatheader .minimize {
     position: absolute;
     right: 38px;
     top: 20px;
+    cursor: pointer;
 }
 
-.chatheader p {
+.chatheader h5 {
     font-weight: bold;
     margin: 0;
     width: 80%;
+    color: white;
+    cursor: pointer;
 }
 
 .chatbody {
-    background-color: #333333;
+    background-color: rgba(255,255,255,0.5);
 }
 
 .chatform {
@@ -126,8 +119,8 @@
 }
 
 .chatname:focus, .chatmessage:focus {
-    background-color: rgba(238, 238, 238, 0.5);
-    border-color: #eeeeee;
+    background-color: rgba(238, 238, 238, 0.7);
+    border-color: rgb(0,0,0);
     outline: none;
 }
 
@@ -136,16 +129,17 @@
     margin: 8px 0;
     resize: none;
     background-color: rgba(238, 238, 238, 0.3);
-    border: solid 1px #eeeeee;
+    border: solid 1px rgb(0,0,0);
     border-radius: 5px;
     padding: 8px 16px;
-    color: #eeeeee;
+    color: black;
 }
 
 .chatbutton {
+    cursor: pointer;
     width: 100%;
     margin: 8px 0;
-    background-color: #2ecc71;
+    background-color: rgba(46, 204, 113, 0.7);
     border: solid 2px #2ecc71;
     border-radius: 5px;
     color: #eeeeee;
@@ -154,41 +148,38 @@
 }
 
 .chatbutton:hover {
-    background-color: rgba(46, 204, 113, 0.7);
+    background-color: rgba(46, 204, 113, 0.5);
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #eeeeee;
+    color: black;
     opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #eeeeee;
+    color: black;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #eeeeee;
+    color: black;
 }
 
 .messdiv {
     position: fixed;
-    top: 50px;
+    top: 150px;
     height: 100%;
     background-color: rgba(46, 204, 113, 0.7);
+    box-shadow: 0px 0px 30px 0px #eee;
     color: #eeeeee;
     border-radius: 15px;
     padding: 8px 16px;
+    height: auto;
 }
 
 .messdiv h2 {
 
 }
 
-@media screen and (max-width: 900px) {
-    .chatmessage {
-        height: 15vh;
-    }
-}
 
 .pricetab {
     box-shadow: 0px 0px 30px 0px #eee;
@@ -273,7 +264,8 @@
 
 .pricediv {
     background-color: rgba(0, 0, 0, 0.4);
-    height: 100%;
+    height: auto;
+    padding-bottom: 15%;
 }
 
 .pricediv__title {
@@ -283,7 +275,7 @@
 }
 
 .functiondiv {
-    height: 100vh;
+    padding-bottom: 20%;
     background-color: black;
 }
 
@@ -353,8 +345,75 @@
     transition: .4s;
 }
 
-
-
 body {
     color: white;
+}
+
+.whoarewediv {
+    background-color: black;
+}
+
+.whoarewediv__title {
+    color: white;
+    text-align: center;
+    margin: 128px 0 32px 0;
+}
+
+.whoarewediv__item {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 32px 0;
+    text-align: center;
+}
+
+.image-circle {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 32px 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-position: center;
+    background-size: cover;
+}
+
+.whoarewediv h3 {
+    text-align: center;
+    margin-bottom: 100px;
+    color: black;
+}
+
+.social-button {
+    position: absolute;
+    bottom: 16px;
+    text-align: center;
+    line-height: 64px;
+    width: 64px;
+    height: 64px;
+    font-size: 2.2rem;
+    border-radius: 50%;
+}
+
+.social-button--facebook {
+    left: 20%;
+    color: #3b5998;
+    background-color: white;
+}
+
+.social-button--facebook:hover {
+    background-color: #3b5998;
+    color: white;
+    transition: .4s;
+}
+
+.social-button--mail {
+    right: 20%;
+    color: #C71610;
+    background-color: white;
+}
+
+.social-button--mail:hover {
+    background-color: #C71610;
+    color: white;
+    transition: .4s;
 }
