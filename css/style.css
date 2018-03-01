@@ -1,14 +1,13 @@
 .menudiv {
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 5;
     position: fixed;
     padding: 0;
-    background-color: rgba(0, 0, 0, 0.7);
     height:60px;
     line-height: 60px;
 }
 
-
-.menudiv__item{
+.menudiv__item {
     text-align: center;
     color:white;
     text-decoration:none;
@@ -33,28 +32,44 @@
     text-decoration:none;
 }
 
-
 .homediv {
     height: 100%;
     background: rgba(0,0,0,0.4);
 }
 
 .homediv h1 {
+    margin-top: 16px;
+    margin-bottom: 0;
     color: white;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     text-align: center;
 }
 
-
-.homediv img {
-    width: 15%;
+.homediv__item {
     position: absolute;
-    top: 47%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.homediv .imm-home {
+    width: 150px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.flag {
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    top: 64px;
+    right: 32px;
+}
+
+.flag img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 #img1 {
@@ -75,14 +90,13 @@
     height: auto;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    background-color: transparent;
     box-shadow: 0px 0px 30px 0px #eee;
     color: #eeeeee;
 }
 
 .chatheader {
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,1);
     padding: 16px 16px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -111,7 +125,7 @@
 }
 
 .chatbody {
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.8);
 }
 
 .chatform {
@@ -119,7 +133,7 @@
 }
 
 .chatname:focus, .chatmessage:focus {
-    background-color: rgba(238, 238, 238, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
     border-color: rgb(0,0,0);
     outline: none;
 }
@@ -128,7 +142,7 @@
     width: 100%;
     margin: 8px 0;
     resize: none;
-    background-color: rgba(238, 238, 238, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     border: solid 1px rgb(0,0,0);
     border-radius: 5px;
     padding: 8px 16px;
@@ -148,7 +162,8 @@
 }
 
 .chatbutton:hover {
-    background-color: rgba(46, 204, 113, 0.5);
+    background-color: rgba(46, 204, 113, 0.9);
+    transition: .4s;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -168,18 +183,13 @@
     position: fixed;
     top: 150px;
     height: 100%;
-    background-color: rgba(46, 204, 113, 0.7);
+    background-color: rgba(0,0,0,0.8);
     box-shadow: 0px 0px 30px 0px #eee;
     color: #eeeeee;
     border-radius: 15px;
-    padding: 8px 16px;
+    padding: 16px 32px;
     height: auto;
 }
-
-.messdiv h2 {
-
-}
-
 
 .pricetab {
     box-shadow: 0px 0px 30px 0px #eee;
@@ -229,11 +239,11 @@
 }
 
 .pricetab .fa-times {
-    color: red;
+    color: #e74c3c;
 }
 
 .pricetab .fa-check {
-    color: green;
+    color: #2ecc71;
 }
 
 .pricetab__icons {
@@ -255,11 +265,11 @@
 }
 
 .pricetab--1 h5 {
-    color: rgba(46, 204, 113, 0.7);
+    color: rgba(46, 204, 113, 1);
 }
 
 .pricetab--2 h5 {
-    color: rgba(52, 152, 219, 0.7);
+    color: rgba(52, 152, 219, 1);
 }
 
 .pricediv {
@@ -317,36 +327,48 @@
     height: 64px;
     font-size: 2.2rem;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
 }
 
 .store-button-apple {
-    background-color: #1b6cf1;
-    color: white;
+    background-color: white;
+    color: #1b6cf1;
 }
 
 .store-button-apple:hover {
-    background-color: white;
-    color: #1b6cf1;
+    background-color: #1b6cf1;
+    color: white;
     transition: .4s;
 }
 
+.store-button-apple:hover + svg .sfondo-rect-app {
+    fill: white;
+    transition: .4s
+}
+
+
 .store-button-android {
-    background-color: #A4C639;
-    color: white;
+    background-color: white;
+    color: #A4C639;
 }
 
 .store-button-android:hover {
-    background-color: white;
-    color: #A4C639;
+    background-color: #A4C639;
+    color: white;
     transition: .4s;
+}
+
+.store-button-android:hover + svg .sfondo-rect-andr {
+    fill: white;
+    transition: .4s
 }
 
 body {
     color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .whoarewediv {
@@ -356,12 +378,12 @@ body {
 .whoarewediv__title {
     color: white;
     text-align: center;
-    margin: 128px 0 32px 0;
+    margin: 128px 0 16px 0;
 }
 
 .whoarewediv__item {
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     margin: 32px 0;
     text-align: center;
 }
@@ -370,7 +392,7 @@ body {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    margin: 32px 0;
+    margin: 16px 0;
     margin-left: 50%;
     transform: translateX(-50%);
     background-position: center;
@@ -379,7 +401,13 @@ body {
 
 .whoarewediv h3 {
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 12px;
+    color: black;
+}
+
+.whoarewediv h5 {
+    text-align: center;
+    margin-bottom: 80px;
     color: black;
 }
 
@@ -387,10 +415,10 @@ body {
     position: absolute;
     bottom: 16px;
     text-align: center;
-    line-height: 64px;
-    width: 64px;
-    height: 64px;
-    font-size: 2.2rem;
+    line-height: 48px;
+    width: 48px;
+    height: 48px;
+    font-size: 2rem;
     border-radius: 50%;
 }
 
@@ -416,4 +444,29 @@ body {
     background-color: #C71610;
     color: white;
     transition: .4s;
+}
+
+.footer {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    padding: 32px;
+}
+
+.footer hr {
+    border-color: white;
+}
+
+.footer h5 {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 32px;
+    font-weight: bold;
+}
+
+.footer a {
+    color:white;
+}
+
+.footer-copyright {
+    margin-top: 32px;
 }
